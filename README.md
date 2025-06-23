@@ -38,3 +38,42 @@ This downloads and stores 1M SOFR forward rates:
 
 ```bash
 python etl.py
+
+### 2. Start the FastAPI Server
+Run the API locally:
+
+```bash
+uvicorn main:app --reload
+```
+
+Then open your browser at:  
+[http://localhost:8000/docs](http://localhost:8000/docs) to test via Swagger UI.
+
+### 3. Example Request
+
+```http
+POST /loan-rate-curve
+Content-Type: application/json
+
+{
+  "maturity_date": "2026-01-01",
+  "reference_rate": "SOFR",
+  "rate_floor": 0.02,
+  "rate_ceiling": 0.05,
+  "rate_spread": 0.015
+}
+```
+
+---
+
+## Time Spent
+
+3.5 hrs
+
+---
+
+## If I Had More Time
+
+- Add automated tests for the ETL layer  
+- Introduce logging and better error handling  
+- Support multiple tenors and reference rate types  
