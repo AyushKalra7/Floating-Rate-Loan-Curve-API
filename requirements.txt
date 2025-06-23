@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+pandas
+requests
+openpyxl
+python-dateutil
+pytest
+httpx
