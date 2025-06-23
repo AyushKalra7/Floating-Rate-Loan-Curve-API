@@ -76,4 +76,7 @@ Content-Type: application/json
 
 - Add automated tests for the ETL layer  
 - Introduce logging and better error handling  
-- Support multiple tenors and reference rate types  
+- Support multiple tenors and reference rate types
+
+## Snip of success response 
+<img width="1692" alt="Screenshot 2025-06-23 at 23 39 45" src="https://github.com/user-attachments/assets/1e5fd693-aa28-4b8c-86db-b09f0b24c769" />
